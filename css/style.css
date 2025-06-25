@@ -269,6 +269,7 @@ button {
     margin: 0px;
     width: 100%;
     text-align: center;
+    zoom: 1;
     
 }
 
@@ -1244,4 +1245,188 @@ p.dummy_text {
 
 .margin_top90 {
     margin-top: 90px;
+}
+
+/* Add styles for the new pricing elements */
+.feature_list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.feature_list li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #505050;
+}
+
+.feature_list li:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #8b2791;
+}
+
+.pricing_box {
+    position: relative;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+}
+
+.pricing_box.popular {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    border: 2px solid #8b2791;
+}
+
+.popular_badge {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background: #8b2791;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup_bt.outline a {
+    background: transparent;
+    color: #8b2791;
+    border: 2px solid #8b2791;
+}
+
+.signup_bt.outline a:hover {
+    background: #8b2791;
+    color: white;
+}
+
+/* Client logo section styles */
+.client_logo_section {
+    padding: 30px 0;
+}
+
+.logo_item {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.logo_item img {
+    max-height: 80px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.logo_item img:hover {
+    filter: grayscale(0%);
+}
+
+.clients-indicators {
+    bottom: -30px;
+}
+
+/* FAQ section styles */
+.faq_section {
+    background-color: #f9f9f9;
+}
+
+.faq_taital {
+    text-align: center;
+    color: #252525;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq_text {
+    margin-bottom: 30px;
+}
+
+.faq_text a {
+    color: #8b2791;
+    text-decoration: underline;
+}
+
+#faqAccordion .card {
+    margin-bottom: 10px;
+    border: none;
+}
+
+#faqAccordion .card-header {
+    background-color: white;
+    border: 1px solid #e9e9e9;
+    padding: 0;
+}
+
+#faqAccordion .btn-link {
+    width: 100%;
+    text-align: left;
+    color: #252525;
+    font-weight: 600;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+#faqAccordion .btn-link:hover, 
+#faqAccordion .btn-link:focus {
+    text-decoration: none;
+}
+
+#faqAccordion .card-body {
+    padding: 20px;
+    color: #505050;
+    line-height: 1.7;
+}
+
+/* Footer updates */
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.footer_desc {
+    color: white;
+    line-height: 1.6;
+}
+
+.call_section {
+    margin-top: 20px;
+}
+
+.call_btn {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    padding: 12px 20px;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.call_btn:hover {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.call_btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.call_text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
 }
