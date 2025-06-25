@@ -669,6 +669,17 @@ form.example::after {
     border-radius: 10px;
     border: 1px solid #ad9ed5;
     padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 450px;
+}
+
+.pricing_box.popular {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    border: 2px solid #8b2791;
 }
 
 .number_text {
@@ -726,7 +737,8 @@ form.example::after {
     width: 170px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
+    margin-top: auto;
 }
 
 .signup_bt a {
@@ -734,43 +746,39 @@ form.example::after {
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-    background-color: #3d51d0;
-    padding: 12px 51px;
+    background-color: #8b2791;
+    padding: 12px 0;
     border-radius: 5px;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .signup_bt a:hover {
     color: #ffffff;
-    background-color: #ed1c24;
+    background-color: #a33dad;
 }
 
-.pricing_box:hover {
-    border: 1px solid #272b91;
-    background-color: #272b91;
+.signup_bt.outline a {
+    background: transparent;
+    color: #8b2791;
+    border: 2px solid #8b2791;
 }
 
-.pricing_box:hover .number_text{
-    border: 1px solid #272b91;
-    color: #37139a;
+.signup_bt.outline a:hover {
+    background: rgba(139, 39, 145, 0.15);
+    color: #8b2791;
 }
 
-.pricing_box:hover .cloud_text{
-    color: #ffffff;
-}
-.pricing_box:hover .monthly_text{
-    color: #ffffff;
-}
-.pricing_box:hover .dolor_text{
-    color: #ffffff;
-}
-
-.pricing_box:hover .band_text{
-    color: #ffffff;
-}
-
-.pricing_box:hover .signup_bt a{
-    color: #ffffff;
-    background-color: #ed1c24;
+.popular_badge {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    background: #8b2791;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* pricing section start */
@@ -1253,6 +1261,7 @@ p.dummy_text {
     padding-left: 0;
     margin: 20px 0;
     text-align: left;
+    flex-grow: 1;
 }
 
 .feature_list li {
@@ -1269,41 +1278,6 @@ p.dummy_text {
     left: 0;
     top: 8px;
     color: #8b2791;
-}
-
-.pricing_box {
-    position: relative;
-    padding: 40px 30px;
-    transition: all 0.3s ease;
-}
-
-.pricing_box.popular {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px);
-    border: 2px solid #8b2791;
-}
-
-.popular_badge {
-    position: absolute;
-    top: -15px;
-    right: 30px;
-    background: #8b2791;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.signup_bt.outline a {
-    background: transparent;
-    color: #8b2791;
-    border: 2px solid #8b2791;
-}
-
-.signup_bt.outline a:hover {
-    background: #8b2791;
-    color: white;
 }
 
 /* Client logo section styles */
